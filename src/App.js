@@ -25,7 +25,7 @@ function App() {
           path="/books/:id"
           render={() => <BookInfo books={books} addToCart={addToCart} />}
         />
-        <Route path="/cart" render={() => <Cart cart={cart} />} />
+        <Route path="/cart" render={() => <Cart books={books} cart={cart} />} />
         <Footer />
       </div>
     </Router>
